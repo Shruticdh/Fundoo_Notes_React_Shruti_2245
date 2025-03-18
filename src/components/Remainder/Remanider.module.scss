@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    width: 100%;
+    overflow-x: hidden;
+    height: 100vh;
+  }
+
+  .notesContainer {
+    transition: margin-left 0.3s ease-in-out;
+    margin-top: 4rem;
+    width: 70% !important;
+  }
+  
+  .expanded {
+    margin-left: 21rem; // Sidebar open
+  }
+  
+  .collapsed {
+    margin-left: 15rem; // Sidebar closed
+  }
+ 
+  @media screen and (max-width: 1024px){
+    .notesContainer {
+      transition: margin-left 0.3s ease-in-out;
+      margin-top: 4rem;
+      width: 70% !important;
+    }
+    
+    .expanded {
+      margin-left: 18rem; // Sidebar open
+      width:700px !important;
+    }
+    
+    .collapsed {
+      margin-left: 10rem; // Sidebar closed
+      width: 650px !important;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    .notesContainer {
+      transition: margin-left 0.3s ease-in-out;
+      margin-top: 4rem;
+      width: 70% !important;
+    }
+    
+    .expanded {
+      margin-left: 18rem; // Sidebar open
+      width:450px !important;
+    }
+    
+    .collapsed {
+      margin-left: 10rem; // Sidebar closed
+      // width: 700px !important;
+    }
+  }
+  @media screen and (max-width: 480px){
+    .notesContainer {
+      transition: margin-left 0.3s ease-in-out;
+      margin-top: 4rem;
+      width: 70% !important;
+    }
+    
+    .expanded {
+      margin-left: 18rem; // Sidebar open
+    }
+    
+    .collapsed {
+      margin-left: 5rem; // Sidebar closed
+    }
+  }

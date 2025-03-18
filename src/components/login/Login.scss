@@ -1,0 +1,365 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+// Main container
+.fundoo-Login-Form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+// Login box
+.fundoo-Login {
+  width: 370px;
+  height: 70vh;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #1f1e1e;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-header {
+      font-size: 21px;
+      font-weight: bold;
+      color: #fbbc05;
+      margin-bottom: 10px;
+  }
+
+  &-signin {
+      font-size: 20px;
+      margin-bottom: 5px;
+  }
+
+  &-account {
+      font-size: 14px;
+      color: #000000;
+      margin-bottom: 20px;
+  }
+
+  &-email,
+  &-Password {
+      margin-bottom: 15px;
+      width: 100%;
+
+      .email,
+      .password {
+          width: 100%;
+      }
+  }
+
+  &-forget,
+  &-create {
+      align-self: flex-start;
+      font-size: 10px;
+      color: #255fab;
+      cursor: pointer;
+      margin-bottom: 10px;
+      margin-left: -0.5rem;
+
+      &:hover {
+          text-decoration: underline;
+      }
+  }
+
+  .button {
+      font-size: 10px;
+  }
+
+  &-button {
+    margin-top: -3rem;
+    margin-left: 15rem;
+    width: 100%;
+
+      button {
+          width: 30%;
+          background-color: #255fab;
+          color: #fff;
+          font-weight: bold;
+          padding: 7px;
+          border-radius: 5px;
+          transition: background 0.3s ease;
+
+          &:hover {
+              background-color: #2365b1;
+          }
+      }
+  }
+}
+
+// Footer styles
+.fundoo-Login-footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 1rem;
+}
+
+.fundoo-Login-help,
+.fundoo-Login-privacy,
+.fundoo-Login-terms {
+  font-size: 10px;
+  color: #000000;
+  cursor: pointer;
+
+  &:hover {
+      color: #1a73e8;
+      text-decoration: underline;
+  }
+}
+
+.help {
+  margin-left: 8.5rem;
+}
+
+@media screen and (max-width: 768px){
+  .fundoo-Login-Form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh !important;
+    background-color: #ffffff;
+  }
+  
+  // Login box
+  .fundoo-Login {
+    width: 300px !important;
+    height: 80vh !important;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #1f1e1e;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    &-header {
+        font-size: 21px;
+        font-weight: bold;
+        color: #fbbc05;
+        margin-bottom: 10px;
+    }
+  
+    &-signin {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+  
+    &-account {
+        font-size: 14px;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+  
+    &-email,
+    &-Password {
+        margin-bottom: 15px;
+        width: 100%;
+  
+        .email,
+        .password {
+            width: 100%;
+        }
+    }
+  
+    &-forget,
+    &-create {
+        align-self: flex-start;
+        font-size: 10px;
+        color: #255fab;
+        cursor: pointer;
+        margin-bottom: 10px;
+        margin-left: -0.5rem;
+  
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+  
+    .button {
+        font-size: 10px;
+    }
+  
+    &-button {
+      margin-top: -3rem;
+      margin-left: 11rem;
+      width: 100%;
+  
+        button {
+            width: 30%;
+            background-color: #255fab;
+            color: #fff;
+            font-weight: bold;
+            padding: 7px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+  
+            &:hover {
+                background-color: #2365b1;
+            }
+        }
+    }
+  }
+  
+  // Footer styles
+  .fundoo-Login-footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 1rem;
+  }
+  
+  .fundoo-Login-help,
+  .fundoo-Login-privacy,
+  .fundoo-Login-terms {
+    font-size: 10px;
+    color: #000000;
+    cursor: pointer;
+  
+    &:hover {
+        color: #1a73e8;
+        text-decoration: underline;
+    }
+  }
+  
+  .help {
+    margin-left: 8.5rem;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .fundoo-Login-Form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh !important;
+    background-color: #ffffff;
+  }
+  
+  // Login box
+  .fundoo-Login {
+    width: 250px !important;
+    height: 80vh !important;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #1f1e1e;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    &-header {
+        font-size: 21px;
+        font-weight: bold;
+        color: #fbbc05;
+        margin-bottom: 10px;
+    }
+  
+    &-signin {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+  
+    &-account {
+        font-size: 14px;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+  
+    &-email,
+    &-Password {
+        margin-bottom: 15px;
+        width: 100%;
+  
+        .email,
+        .password {
+            width: 100%;
+        }
+    }
+  
+    &-forget,
+    &-create {
+        align-self: flex-start;
+        font-size: 10px;
+        color: #255fab;
+        cursor: pointer;
+        margin-bottom: 10px;
+        margin-left: -0.5rem;
+  
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+  
+    .button {
+        font-size: 10px;
+    }
+  
+    &-button {
+      margin-top: -3rem;
+      margin-left: 9rem;
+      width: 100%;
+  
+        button {
+            width: 30%;
+            background-color: #214c86 !important;
+            color: #fff;
+            font-weight: bold;
+            padding: 7px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+  
+            &:hover {
+                background-color: #2365b1;
+            }
+        }
+    }
+  }
+  
+  // Footer styles
+  .fundoo-Login-footer {
+    display: flex;
+    justify-content: center;
+    gap: 9px !important;
+    margin-top: 1rem;
+    margin-left: -1rem !important;
+  }
+  
+  .fundoo-Login-help,
+  .fundoo-Login-privacy,
+  .fundoo-Login-terms {
+    font-size: 10px;
+    color: #000000;
+    cursor: pointer;
+    gap:1px;
+    margin-left: -7em !important;
+  
+    &:hover {
+        color: #1a73e8;
+        text-decoration: underline;
+    }
+  }
+  
+  .help {
+    margin-left: -4.5rem;
+  }
+}

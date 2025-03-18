@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+.noteCard {
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 12px;
+    max-width: 230px;
+    min-height: 110px; /* Minimum height */
+    // max-height: 300px; 
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+  
+    &:hover {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transform: scale(1) !important;
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; 
+    flex-grow: 1;
+    word-wrap: break-word;
+  }
+  
+  .title {
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Overflow text ko ... mein convert karne ke liye */
+    max-width: 100%;
+    display: block;
+    min-height: 20px;
+  }
+  
+  .description {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+    min-height: 30px;
+    max-height: 300px;
+    margin-bottom: 1.5rem;
+    // display: -webkit-box;
+    // -webkit-line-clamp:7; /* 3 lines tak dikhaye */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  /* Icons Row */
+  .noteIcons {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    margin-bottom: -7px;
+    width: 90%;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    position: absolute;  // This ensures icons don’t affect the card's size
+    bottom: 10px;        
+  }
+  
+  /* Show Icons on Hover */
+  .noteCard:hover .noteIcons {
+    opacity: 1;
+  }
+  
+  /* Icon Style */
+  .icon {
+    font-size: 16px !important;
+    color: rgb(95, 94, 94) !important;
+    cursor: pointer;
+
+  
+    &:hover {
+      color: black;
+    }
+  }
+
+  
+
+.colorPalette {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  margin-left: 5.5rem;
+  z-index: 10;
+  display: none;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+.noteCard:hover .colorPalette {
+display: flex;
+// visibility: visible;
+}
+
+
+.color-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 3px solid;
+  margin: 4px;
+  cursor: pointer;
+  // transition: transform 0.1s ease-in-out;
+  
+  &:hover {
+    // transform: scale(1.1);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+  }
+}
+
+// /* Colors */
+.col1 { background-color: #FFFFFF; border: 1px solid #e7e7bc; }
+.col2 { background-color: #FAAFA8; }
+.col3 { background-color: #F39F76; }
+.col4 { background-color: #FFF8B8; }
+.col5 { background-color: #E2F6D3; }
+.col6 { background-color: #B4DDD3; }
+.col7 { background-color: #D4E4ED; }
+.col8 { background-color: #AECCDC; }
+.col9 { background-color: #D3BFDB; }
+.col10 { background-color: #F6E2DD; }
+.col11 { background-color: #E9E3D4; }
+.col12 { background-color: #EFEFF1; }
+
+.dateTimePicker {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.reminder {
+  font-size: 10px;
+  color: #565454;
+  background: #e4e3e3;
+  padding: 5px 10px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  width: fit-content;
+  margin-top: -8px !important;
+  margin-bottom: 25px !important;
+
+}
+
+.reminderIcon {
+  font-size: 10px !important;
+  color: #565454;
+}
+
+.clearReminderIcon {
+  font-size: 10px !important;
+  color: #5f6368;
+  cursor: pointer;
+  &:hover {
+    color: #000000;
+    font-size: 15px !important;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .noteCard {
+    width: 200px !important;
+  }
+}
+
+/* 💻 Standard Laptops (1024px - 1440px) */
+@media (max-width: 1440px) {
+  .noteCard {
+    width: 250px;
+  }
+}
+
+/* 📱 Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  .noteCard {
+    width: 220px;
+    padding: 10px;
+  }
+
+  .noteIcons {
+    width: 100%;
+  }
+
+  .colorPalette {
+    width: 320px;
+  }
+}
+
+/* 📱 Mobile Devices (480px - 768px) */
+@media (max-width: 768px) {
+  .noteCard {
+    width: 220px;
+    padding: 10px;
+    min-height: 80px;
+    margin-left: 2rem;
+  }
+
+  .content {
+    max-height: 250px;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .noteIcons {
+    width: 100%;
+  }
+
+  .colorPalette {
+    width: 250px;
+  }
+}
+
+/* 📲 Small Mobile Devices (Below 480px) */
+@media (max-width: 480px) {
+  .noteCard {
+    width: 150px !important;
+    padding: 8px;
+    margin-left: -1rem;
+  }
+
+  .title {
+    font-size: 13px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+
+  .noteIcons {
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .colorPalette {
+    width: 200px;
+  }
+}

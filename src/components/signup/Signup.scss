@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100%;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+// Main container
+.fundoo-Signup-Form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+  
+  // Signup box
+  .fundoo-Signup {
+    width: 58vw;
+    height: 93vh;
+    padding: 30px;
+    border: 1px solid #d1d1d1; // Added border instead of box-shadow
+    border-radius: 8px;
+    background-color: #fff;
+    border: 1px solid #1f1e1e;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 100px 0px 100px;
+  }
+  
+  // Header styles
+  .fundoo-Signup-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fbbc05;
+    margin-bottom: 10px;
+  }
+  
+  .fundoo-Signup-create {
+    font-size: 19px;
+    // font-weight: bold;
+    margin-bottom: 15px;
+    height: 1rem;
+  }  
+  // Input fields styles
+  .fundoo-Signup-firstname,
+  .fundoo-Signup-lastname,
+  .fundoo-Signup-username,
+  .fundoo-Signup-password,
+  .fundoo-Signup-confirm {
+    margin-bottom: 15px;
+    width: 100%;
+  
+    input {
+      width: 100%;
+    }
+  }
+  .fundoo-Signup-pc{
+    display: flex;
+    flex-direction: row;
+  }
+  .fundoo-Signup-lastname{
+    margin-left: 14rem;
+    margin-top: -4.5rem;
+    // width:2rem;
+  }
+  .fundoo-Signup-confirm{
+    margin-left:-14.5rem;
+    // margin-top: -4.5rem;
+  }
+  #outlined-basicusername{
+    width:25.5rem;
+  }
+  // Extra info texts
+  .fundoo-Signup-periods,
+  .fundoo-Signup-symbols {
+    font-size: 12px;
+    color: #666;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  // Sign-in and Register buttons
+  .fundoo-Signup-signinButton,
+  .fundoo-Login-registerButton {
+    width: 100%;
+    text-align: left;
+  }
+  
+  .fundoo-Signup-signinButton button {
+    font-size: 14px;
+    color: #2d5fa0;
+    cursor: pointer;
+    margin-top: 3rem;
+  
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .instead Button{
+    font-size: 0rem
+  }
+  
+  .fundoo-Login-registerButton button {
+    width: 15%;
+    background-color: #205599;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    margin-left: 21.5rem;
+    margin-top: -4rem;
+  
+    &:hover {
+      background-color: #1666c1;
+    }
+  }
+  
+  // Image section
+  .fundoo-Signup-picture {
+    // margin-bottom: 15px;
+    width:20vw;
+    height: 7vh;
+  
+    .img {
+      // width: 19vw;
+      margin-left: 30rem;
+      margin-bottom: -21rem;
+      width:17vw;
+    }
+  }
+
+  // Footer styles
+.fundoo-Signup-footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 1rem;
+}
+
+.fundoo-Signup-help,
+.fundoo-Signup-privacy,
+.fundoo-Signup-terms {
+  font-size: 10px;
+  color: #000000;
+  cursor: pointer;
+
+  &:hover {
+      color: #1a73e8;
+      text-decoration: underline;
+  }
+}
+
+.help {
+  margin-left: 8.5rem;
+}
+  

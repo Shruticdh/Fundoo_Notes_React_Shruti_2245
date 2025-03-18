@@ -1,0 +1,605 @@
+.fundoo-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height:11vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  background-color: white;
+  box-shadow: 0px 1px 5px #ececec;
+  z-index: 1000;
+  padding: 5px 25px;
+  gap: 1rem;
+
+
+  .fundoo-navbar-left {
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    
+  }
+
+  .fundoo-navbar-logo {
+    display: flex;
+    align-items: center;
+
+.header-image{
+  width: 3vw;
+}
+
+}
+  .header-img {
+    width: 3vw;
+    height: 6vh;
+  }
+
+
+    h2 {
+      margin-left: 10px;
+      font-size: 22px;
+      font-weight: 500;
+      color: #454545;
+    }
+  }
+
+  .fundoo-navbar-search {
+    display: flex;
+    align-items: center;
+    background-color: #f1f3f4;
+    padding: 5px 15px;
+    border-radius: 8px;
+    width: 60%;
+    height: 8vh;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+    
+    input {
+      border: none;
+      outline: none;
+      margin-left: 10px;
+      width: 100%;
+      font-size: 16px;
+      background-color: transparent;
+    }
+  }
+
+  .fundoo-navbar-icons {
+    display: flex;
+    align-items: center;
+    
+    .icon {
+      margin: 0 12px;
+      cursor: pointer;
+      color: gray;
+      transition: color 0.2s;
+
+      &:hover {
+        color: black;
+      }
+    }
+  }
+
+.fundoo-drawer .MuiDrawer-paper {
+  width: 280px !important;
+  top: 66.5px; 
+  border-right: none;
+  background-color: transparent !important;
+  transition: width 0.3s ease;
+
+  .fundoo-drawer.collapsed .MuiDrawer-paper {
+    width: 70px; // ✅ Google Keep jaisa Collapse
+  }
+  
+  .drawer-icon {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .fundoo-drawer.collapsed .MuiListItemText-root {
+    display: none !important; 
+  }  
+
+  .drawer-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: #5e6063 !important;
+    font-size: -1rem !important;
+  
+    &:hover {
+      background-color: rgb(254, 239, 195) !important;
+    }
+  
+
+    .drawer-item {
+      display: flex;
+      align-items: center;
+      padding: 12px 20px ;
+      font-weight: 500;
+      color: #5f6368;
+      cursor: pointer;
+      transition: background 0.3s;
+      &:hover {
+        background-color: rgb(254, 239, 195) !important;
+      }
+      }
+
+      .drawer-icon {
+        margin-right: 20px;
+        color: #5e6063;
+
+      }
+
+      &.hover {
+        // background-color: #e8e9fe;
+        background-color: rgb(254, 239, 195) !important;
+        color: #1967d2;
+        
+        .drawer-icon {
+          color: #1967d2;
+        }
+      }
+    }
+  }
+
+
+// Responsive Drawer adjustments
+@media (max-width: 1024px){
+  .fundoo-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height:10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-color: white;
+    box-shadow: 0px 1px 5px #ececec;
+    z-index: 1000;
+    padding: 5px 25px;
+    // gap: 1rem;
+  
+  
+    .fundoo-navbar-left {
+      display: flex;
+      align-items: center;
+      gap:1rem;
+      
+    }
+  
+    .fundoo-navbar-logo {
+      display: flex;
+      align-items: center;
+  
+  .header-image{
+    width: 3vw;
+  }
+  
+  }
+    .header-img {
+      width: 2vw;
+      height: 4vh;
+    }
+  
+  
+      h2 {
+        margin-left: 10px;
+        font-size: 22px;
+        font-weight: 500;
+        color: #454545;
+      }
+    }
+  
+    .fundoo-navbar-search {
+      display: flex;
+      align-items: center;
+      background-color: #f1f3f4;
+      padding: 5px 15px;
+      border-radius: 8px;
+      width: 50%;
+      height: 6vh;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      
+      input {
+        border: none;
+        outline: none;
+        margin-left: 10px;
+        width: 100%;
+        font-size: 16px;
+        background-color: transparent;
+      }
+    }
+  
+    .fundoo-navbar-icons {
+      display: flex;
+      align-items: center;
+      
+      .icon {
+        margin: 0 12px;
+        cursor: pointer;
+        color: gray;
+        transition: color 0.2s;
+  
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  
+  .fundoo-drawer .MuiDrawer-paper {
+    width: 280px !important;
+    top: 66.5px; 
+    border-right: none;
+    background-color: transparent !important;
+    transition: width 0.3s ease;
+  
+    .fundoo-drawer.collapsed .MuiDrawer-paper {
+      width: 70px; // ✅ Google Keep jaisa Collapse
+    }
+    
+    .drawer-icon {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .fundoo-drawer.collapsed .MuiListItemText-root {
+      display: none !important; 
+    }  
+  
+    .drawer-list {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      color: #5e6063 !important;
+      font-size: -1rem !important;
+    
+      &:hover {
+        background-color: rgb(254, 239, 195) !important;
+      }
+    
+  
+      .drawer-item {
+        display: flex;
+        align-items: center;
+        padding: 12px 20px ;
+        font-weight: 500;
+        color: #5f6368;
+        cursor: pointer;
+        transition: background 0.3s;
+        &:hover {
+          background-color: rgb(254, 239, 195) !important;
+        }
+        }
+  
+        .drawer-icon {
+          margin-right: 20px;
+          color: #5e6063;
+  
+        }
+  
+        &.hover {
+          // background-color: #e8e9fe;
+          background-color: rgb(254, 239, 195) !important;
+          color: #1967d2;
+          
+          .drawer-icon {
+            color: #1967d2;
+          }
+        }
+      }
+    }
+  
+
+}
+  
+
+@media (max-width: 768px) {
+  .fundoo-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height:10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-color: white;
+    box-shadow: 0px 1px 5px #ececec;
+    z-index: 1000;
+    padding: 5px 25px;
+    // gap: 1rem;
+  
+  
+    .fundoo-navbar-left {
+      display: flex;
+      align-items: center;
+      // gap:1rem;
+      
+    }
+  
+    .fundoo-navbar-logo {
+      display: flex;
+      align-items: center;
+  
+  .header-image{
+    width: 3vw;
+  }
+  
+  }
+    .header-img {
+      width: 2vw;
+      height: 4vh;
+    }
+  
+  
+      h2 {
+        margin-left: 1px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #454545;
+      }
+    }
+  
+    .fundoo-navbar-search {
+      display: flex;
+      align-items: center;
+      background-color: #f1f3f4;
+      padding: 5px 15px;
+      border-radius: 8px;
+      width: 40%;
+      height: 6vh;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      
+      input {
+        border: none;
+        outline: none;
+        margin-left: 10px;
+        width: 100%;
+        font-size: 16px;
+        background-color: transparent;
+      }
+    }
+  
+    .fundoo-navbar-icons {
+      display: flex;
+      align-items: center;
+      
+      .icon {
+        margin: 0 12px;
+        cursor: pointer;
+        color: gray;
+        font-size: 20px;
+        transition: color 0.2s;
+  
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  
+  .fundoo-drawer .MuiDrawer-paper {
+    width: 280px !important;
+    top: 50.5px; 
+    border-right: none;
+    background-color: transparent !important;
+    transition: width 0.3s ease;
+  
+    .fundoo-drawer.collapsed .MuiDrawer-paper {
+      width: 70px; // ✅ Google Keep jaisa Collapse
+    }
+    
+    .drawer-icon {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .fundoo-drawer.collapsed .MuiListItemText-root {
+      display: none !important; 
+    }  
+  
+    .drawer-list {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      color: #5e6063 !important;
+      font-size: -1rem !important;
+    
+      &:hover {
+        background-color: rgb(254, 239, 195) !important;
+      }
+    
+  
+      .drawer-item {
+        display: flex;
+        align-items: center;
+        padding: 12px 20px ;
+        font-weight: 500;
+        color: #5f6368;
+        cursor: pointer;
+        transition: background 0.3s;
+        &:hover {
+          background-color: rgb(254, 239, 195) !important;
+        }
+        }
+  
+        .drawer-icon {
+          margin-right: 20px;
+          color: #5e6063;
+  
+        }
+  
+        &.hover {
+          // background-color: #e8e9fe;
+          background-color: rgb(254, 239, 195) !important;
+          color: #1967d2;
+          
+          .drawer-icon {
+            color: #1967d2;
+          }
+        }
+      }
+    }
+}
+
+
+
+@media (max-width: 480px) {
+  .fundoo-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height:10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-color: white;
+    box-shadow: 0px 1px 5px #ececec;
+    z-index: 1000;
+    padding: 5px 25px;
+    // gap: 1rem;
+  
+  
+    .fundoo-navbar-left {
+      display: flex;
+      align-items: center;
+      margin-left: -1rem;
+      // gap:-1rem;
+      
+    }
+  
+    .fundoo-navbar-logo {
+      display: flex;
+      align-items: center;
+  
+  .header-image{
+    width: 2vw;
+  }
+  
+  }
+    .header-img {
+      width: 5vw;
+      height: 6vh;
+      margin-left: -0.8rem;
+    }
+  
+  
+      h2 {
+        margin-left: -0.8rem;
+        font-size: 16px;
+        font-weight: 500;
+        color: #454545;
+      }
+    }
+  
+    .fundoo-navbar-search {
+      display: flex;
+      align-items: center;
+      background-color: #f1f3f4;
+      padding: 5px 15px;
+      border-radius: 8px;
+      width: 40%;
+      height: 6vh;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+      
+      input {
+        border: none;
+        outline: none;
+        margin-left: 10px;
+        width: 100%;
+        font-size: 16px;
+        background-color: transparent;
+      }
+    }
+  
+    .fundoo-navbar-icons {
+      display: flex;
+      align-items: center;
+      
+      .icon {
+        margin: 0 12px;
+        cursor: pointer;
+        color: gray;
+        font-size: 20px;
+        transition: color 0.2s;
+  
+        &:hover {
+          color: black;
+        }
+      }
+    }
+  
+  .fundoo-drawer .MuiDrawer-paper {
+    width: 70 !important;
+    // background-color: #ffffff !important;
+    top: 50.5px; 
+    background-color: transparent !important;
+    transition: width 0.3s ease;
+  
+    .fundoo-drawer.collapsed .MuiDrawer-paper {
+      width: 70px; // ✅ Google Keep jaisa Collapse
+    }
+    .fundoo-drawer.expanded .MuiDrawer-paper {
+      width: 280px; // ✅ Google Keep jaisa Collapse
+      background-color: white;
+    }
+    
+    .drawer-icon {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .fundoo-drawer.collapse
+   .MuiListItemText-root {
+      display: none !important; 
+    }  
+  
+    .drawer-list {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      color: #5e6063 !important;
+      font-size: -1rem !important;
+    
+      &:hover {
+        background-color: rgb(254, 239, 195) !important;
+      }
+    
+  
+      .drawer-item {
+        display: flex;
+        align-items: center;
+        padding: 12px 20px ;
+        font-weight: 500;
+        color: #5f6368;
+        cursor: pointer;
+        transition: background 0.3s;
+        &:hover {
+          background-color: rgb(254, 239, 195) !important;
+        }
+        }
+  
+        .drawer-icon {
+          margin-right: 20px;
+          color: #5e6063;
+  
+        }
+  
+        &.hover {
+          // background-color: #e8e9fe;
+          background-color: rgb(254, 239, 195) !important;
+          color: #1967d2;
+          
+          .drawer-icon {
+            color: #1967d2;
+          }
+        }
+      }
+    }
+}
